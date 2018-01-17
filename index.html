@@ -3,9 +3,7 @@
 <head>
   <meta charset='utf-8'>
 
-  <script type='text/javascript' src='index.js'></script>
   <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js"></script>
   <script>
     // Initialize Firebase
     var config = {
@@ -13,7 +11,7 @@
       authDomain: "integrated-git-project.firebaseapp.com",
       databaseURL: "https://integrated-git-project.firebaseio.com",
       projectId: "integrated-git-project",
-      storageBucket: "",
+      storageBucket: "integrated-git-project.appspot.com",
       messagingSenderId: "363330333786"
     };
     firebase.initializeApp(config);
@@ -25,5 +23,8 @@
   <input type='text'></input>
   <h3>Password</h3>
   <input type='text'></input>
+  <p id='username-display'></p>
+
+  <script type='text/javascript' src='index.js'></script>
 </body>
 </html>
